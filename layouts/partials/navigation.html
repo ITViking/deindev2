@@ -1,0 +1,11 @@
+<div class="navigation">
+    <div class="logo">
+        <h1>DeinDev</h1>
+        <h3>a completely deranged fullstack web developer</h3>
+    </div>
+    <nav class="nav-options">
+        {{ range .Site.Menus.main }}
+            <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+        {{ end }}
+    </nav>
+</div>

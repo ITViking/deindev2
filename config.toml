@@ -1,0 +1,17 @@
+baseURL = "http://deindev.com"
+languageCode = "en-us"
+title = "DeinDev"
+
+[menu]
+  [[menu.main]]
+    name = "work"
+    url = "/work"
+    weight = 1
+  [[menu.main]]
+    name = "skills"
+    url = "/skills"
+    weight = 2
+  [[menu.main]]
+    name = "about"
+    url = "/about"
+    weight = 3

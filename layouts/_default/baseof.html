@@ -1,0 +1,10 @@
+<html lang="en">
+    {{ partial "head" . }}
+<body>
+    {{ partial "navigation" .}}
+    <main>
+        {{ block "main" . }}
+        {{ end }}
+    </main>
+</body>
+</html>
