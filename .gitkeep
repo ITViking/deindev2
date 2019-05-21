@@ -1,0 +1,2 @@
+# Make sure Hugo's content directory is included
+/content
