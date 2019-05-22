@@ -4,9 +4,35 @@ body {
     margin: 0;
 }
 
+.content-container {
+    padding-top: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.about-container {
+    background-color: rgba(10, 36, 99, 1);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    width: 500px;
+    height: fit-content;
+    margin-top: 30px;
+    margin-left: -20px;
+}
+
+.about-me {
+    margin: 30px;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(120deg, rgba(10, 36, 99, 1), rgba(16, 58, 143, 1) 90%);
+}
+
 .introduction-container {
     display: flex;
-    background-color: black;
     background-image: linear-gradient(120deg, rgba(10, 36, 99, 0.5), rgba(57, 100, 201, 0.5) 50%), url("/images/picture-of-my-face.jpg");
     background-size: cover;
     height: 100vh;
