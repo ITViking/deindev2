@@ -7,8 +7,9 @@
     </a>
 
     <nav class="nav-options">
+        {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
-            <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+            <a class='nav-link {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{ end }}' href="{{ .URL }}">{{ .Name }}</a>
         {{ end }}
     </nav>
 </div>
