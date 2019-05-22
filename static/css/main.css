@@ -67,6 +67,12 @@ main {
     position: absolute;
 }
 
+div.navigation a {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
 .logo {
     margin: 20px;
 
