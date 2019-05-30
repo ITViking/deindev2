@@ -2,6 +2,7 @@ body {
     font-family: Lato;
     color: white;
     margin: 0;
+    color: white;
 }
 
 .content-container {
@@ -12,12 +13,12 @@ body {
 }
 
 .about-container {
-    background-color: rgba(10, 36, 99, 1);
+    flex-direction: column;
+    background-image: linear-gradient(120deg, rgb(0,43,54), rgb(8,67,76) 75%);
     box-shadow: 0 1px 3px rgba(0,0,0,0.5);
-    width: 500px;
-    height: fit-content;
+    width: 80vw;
+    height: 70vh;
     margin-top: 30px;
-    margin-left: -20px;
 }
 
 .about-me {
@@ -28,15 +29,15 @@ main {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(120deg, rgba(10, 36, 99, 1), rgba(16, 58, 143, 1) 90%);
+    align-items: center;
 }
 
 .introduction-container {
+    margin-top: 140px;
     display: flex;
-    background-image: linear-gradient(120deg, rgba(10, 36, 99, 0.5), rgba(57, 100, 201, 0.5) 50%), url("/images/picture-of-my-face.jpg");
-    background-size: cover;
-    height: 100vh;
-    padding: 0;
+    background-image: linear-gradient(120deg, rgb(0,43,54), rgb(8,67,76) 75%);
+    width: 80vw;
+    height: 70vh;
     justify-content: center;
     align-items: center;
 }
@@ -70,8 +71,7 @@ main {
 div.navigation a {
     cursor: pointer;
     text-decoration: none;
-    color: white;
-
+    color: rgb(0,43,54);
 }
 
 .nav-options {
@@ -115,4 +115,42 @@ div.navigation a {
 .logo h3 {
     font-weight: 200;
     margin: 5px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-explainer-container {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(120deg, rgb(0,43,54), rgb(8,67,76) 75%);
+    width: 60vw;
+    height: 50vh;
+    margin-bottom: 4em;
+}
+
+.skills-explainer-text {
+    display: flex;
+    align-self: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.technology-listing {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
+}
+
+.technology-listing img {
+    height: 120px;
+    margin: 2em 4em;
 }

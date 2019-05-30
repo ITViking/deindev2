@@ -6,10 +6,11 @@ menu: main
 name: "about"
 weight: 3
 ---
-<div class="about-me-picture">
-    <img src="/images/Philip.jpg" alt="another picture of me" style="height:500px">
-</div>
+{{ defince "main" }}
 <div class="about-container">
+    <div class="about-me-picture">
+        <img src="/images/Philip.jpg" alt="another picture of me" style="height:500px">
+    </div>
     <div class="about-me">
         <p>I call Copenhagen, Denmark, my home.
         As a fullstack webdeveloper I built websites and apps for a living.</p>
@@ -19,5 +20,4 @@ weight: 3
         <p>My leisure time is spread across a multitude of hobbies and activities, ranging between being a scoutleader and working out.</p>
     </div>
 </div>
-
-
+{{ end }}
